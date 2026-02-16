@@ -1,0 +1,15 @@
+@import " tailwindcss";
+* {
+    font-family: Roboto, sans-serif;
+}
+.bg_image{
+    background-image: url(../Assets/banner-image.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+.overlay_banner{
+     background: rgba(0, 0, 0, 0.5);
+    padding: 85px 0px;
+}

@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- tailwind css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- fav icon -->
+    <link rel="shortcut icon" href="./Assets/favicon.png" type="image/x-icon" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- google font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+    <!-- Row css -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>SwiftCart</title>
+  </head>
+  <body>
+    <!-- header part start -->
+    <header>
+      <section class="">
+        <div class="bg-base-100 shadow-sm">
+          <div class="navbar max-w-7xl mx-auto px-4">
+            <div class="navbar-start">
+              <a href="" class="text-3xl font-bold hover:text-purple-600"
+                >SwiftCart</a
+              >
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li>
+                  <a class="text-base font-bold hover:text-purple-600">Home</a>
+                </li>
+                <li>
+                  <a class="text-base font-bold hover:text-purple-600"
+                    >Products</a
+                  >
+                </li>
+                <li>
+                  <a class="text-base font-bold hover:text-purple-600">About</a>
+                </li>
+                <li>
+                  <a class="text-base font-bold hover:text-purple-600"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="navbar-end mx-2">
+              <a class="text-2xl"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  class="inline-block h-5 w-5 stroke-current"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  ></path>
+                </svg>
+              </div>
+              <ul
+                tabindex="-1"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-2 mt-3 w-30 p-2 shadow"
+              >
+                <li>
+                  <a class="text-base font-bold hover:text-purple-600">Home</a>
+                </li>
+                <li>
+                  <a class="text-base font-bold hover:text-purple-600"
+                    >Products</a
+                  >
+                </li>
+                <li>
+                  <a class="text-base font-bold hover:text-purple-600">About</a>
+                </li>
+                <li>
+                  <a class="text-base font-bold hover:text-purple-600"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <!-- header part end -->
+    <main>
+      <!-- banner part start  -->
+      <section class="bg_image h-[500px] relative backdrop-blur-sm">
+        <div class="absolute inset-0 overlay_banner"></div>
+        <!-- Content -->
+        <div class="relative container mx-auto px-6 text-white">
+          <div class="max-w-xl pl-10 pt-30">
+            <h1 class="text-4xl lg:text-5xl font-bold leading-tightmt-6 mb-4">
+              Best Collection For You
+            </h1>
+
+            <p class="text-lg text-gray-200 mb-6">
+              Discover the latest trends in fashion, electronics, and more. Shop
+              with confidence and style at SwiftCart.
+            </p>
+
+            <button class="btn btn-active btn-primary rounded-lg px-10">
+              Shop Now
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- banner part end  -->
+
+      <!-- start Features -->
+      <section class="bg-gray-100 pt-15 py-10">
+        <div class="flex flex-col items-center text-center">
+          <h2 class="text-6xl font-bold font-black">Why Choose Us</h2>
+          <p class="text-xl font-medium text-[#838a96] pt-5">
+            We provide the best shopping experience with top-notch services.
+          </p>
+        </div>
+        <div
+          class="grid grid-cols-1 md:grid-cols-4 gap-3 space-y-10 space-x-3 md:space-y-0  mt-15 max-w-7xl mx-auto px-4"
+        >
+          <!-- card -->
+          <div class="card bg-base-200 rounded shadow-xl py-6 px-5">
+            <div class="card-body items-start text-start">
+              <div
+                class="absolute -top-6 border-2 border-white rounded bg-gray-100 p-2 text-[#3a25c2]"
+              >
+                <i class="fa-regular fa-truck fa-3x"></i>
+              </div>
+              <h3 class="card-title pt-5 text-xl font-bold">Fast Delivery</h3>
+              <p class="pt-4 font-medium text-lg text-[#838a96]">
+                Get your orders delivered to your doorstep quickly and
+                efficiently.
+              </p>
+            </div>
+          </div>
+          <div class="card bg-base-200 rounded shadow-xl py-6 px-5">
+            <div class="card-body items-start text-start">
+              <div
+                class="absolute -top-6 border-2 border-white rounded bg-gray-100 p-2 text-[#3a25c2]"
+              >
+                <i class="fa-solid fa-headphones fa-3x"></i>
+              </div>
+              <h3 class="card-title pt-5 text-xl font-bold">24/7 Support</h3>
+              <p class="pt-4 font-medium text-lg text-[#838a96]">
+                Our support team is available around the clock to assist you.
+              </p>
+            </div>
+          </div>
+          <div class="card bg-base-200 rounded shadow-xl py-6 px-5">
+            <div class="card-body items-start text-start">
+              <div
+                class="absolute -top-6 border-2 border-white rounded bg-gray-100 p-2 text-[#3a25c2]"
+              >
+                <i class="fa-solid fa-shield fa-3x"></i>
+              </div>
+              <h3 class="card-title pt-5 text-xl font-bold">Secure Payment</h3>
+              <p class="pt-4 font-medium text-lg text-[#838a96]">
+                Experience safe and secure transactions with our encrypted payment systems.
+              </p>
+            </div>
+          </div>
+          <div class="card bg-base-200 rounded shadow-xl py-6 px-5">
+            <div class="card-body items-start text-start">
+              <div
+                class="absolute -top-6 border rounded bg-gray-100 p-2 text-[#3a25c2]"
+              >
+                <i class="fa-solid fa-rotate fa-3x"></i>
+              </div>
+              <h3 class="card-title pt-5 text-xl font-bold">Easy Returns</h3>
+              <p class="pt-4 font-medium text-lg text-[#838a96]">
+                Not satisfied? Return your products easily within 30 days.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end Features -->
+
+      <!-- start Trending -->
+       <section class="mt-10">
+        <div class="py-5 w-2/5 ml-12">
+          <h2 class="font-extrabold text-4xl text-center">Trending Now</h2>
+        </div>
+        <div id="trending" class="grid grid-cols-1 md:grid-cols-3 gap-5 space-y-10 space-x-3 md:space-y-0 max-w-7xl mx-auto my-10 text-wrap">
+
+
+        </div>
+
+       </section>
+      <!-- end Trending -->
+
+    </main>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
