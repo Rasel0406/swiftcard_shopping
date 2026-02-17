@@ -10,7 +10,6 @@ navLinks.forEach(link => {
 });
 
 
-
 // Trending part
 const trendingSection = ()=>{
     const url ="https://fakestoreapi.com/products";
@@ -27,7 +26,7 @@ const displayTrendingProducts = (products)=>{
     filteredProducts.forEach((product) => {
         const div = document.createElement('div');
         div.innerHTML =`
-                   <div class="card bg-base-100 w-96 shadow-sm h-full flex flex-col">
+                   <div class="card bg-base-100 w-96 shadow-sm h-full flex flex-col hover:shadow-2xl transition-shadow duration-1000">
   <figure class="bg-gray-100 rounded-lg p-6 flex justify-center" >
      <img
       src="${product.image}"
