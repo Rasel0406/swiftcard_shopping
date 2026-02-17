@@ -1,3 +1,16 @@
+// active nav link
+const navLinks = document.querySelectorAll(".nav-link");
+navLinks.forEach(link => {
+  link.addEventListener("click", function () {
+
+    navLinks.forEach(nav => nav.classList.remove("active-nav"));
+
+
+  });
+});
+
+
+
 // Trending part
 const trendingSection = ()=>{
     const url ="https://fakestoreapi.com/products";
@@ -35,8 +48,10 @@ const displayTrendingProducts = (products)=>{
   </div>
 
   <div class="card-body">
-    <h2 class="card-title py-2 font-bold text-xl">
-    ${product.title}
+    <h2 class="card-title py-2 font-bold text-xl truncate">
+   ${product.title.length > 35 
+      ? product.title.slice(0, 32) + "..........." 
+      : product.title}
     </h2>
    <p class="font-bold text-lg py-1">
     $${product.price}

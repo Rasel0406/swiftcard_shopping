@@ -2,6 +2,10 @@
 * {
     font-family: Roboto, sans-serif;
 }
+.active-nav {
+  color: #9333ea !important;   /* purple */
+  /* border-bottom: 3px solid #9333ea; */
+}
 .bg_image{
     background-image: url(../Assets/banner-image.png);
     background-size: cover;

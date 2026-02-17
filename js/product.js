@@ -1,3 +1,15 @@
+// active nav link
+const navLinks = document.querySelectorAll(".nav-link");
+navLinks.forEach(link => {
+  link.addEventListener("click", function () {
+
+    navLinks.forEach(nav => nav.classList.remove("active-nav"));
+
+
+  });
+});
+
+
 // fetch categories list
 const categoriesList = () => {
   const url = "https://fakestoreapi.com/products/categories";
@@ -84,8 +96,10 @@ const displayItems = (products) => {
     </div>
   </div>
   <div class="card-body">
-    <h2 class="card-title py-2 font-bold text-xl">
-    ${product.title}
+    <h2 class="card-title py-2 font-bold text-xl truncate">
+    ${product.title.length > 29 
+      ? product.title.slice(0, 32) + "..........." 
+      : product.title}
     </h2>
    <p class="font-bold text-lg py-1">
     $${product.price}
@@ -138,7 +152,7 @@ const displayProductDetails = (product) => {
     </div>
   </div>
   <div class="card-body">
-    <h2 class="card-title py-2 font-bold text-xl">
+    <h2 class="card-title py-2 font-bold text-xl ">
     ${product.title}
     </h2>
     <p class="py-2 font-semibold text-base">${product.description}</p>
