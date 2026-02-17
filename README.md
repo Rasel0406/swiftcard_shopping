@@ -13,7 +13,7 @@ https://fakestoreapi.com/products
 
 2. Get 🛍️ All Categories
 ```bash
-https://fakestoreapi.com/products/categories
+https://fakestoreapi.com/products/categories (use korece)
 ```
 
 3. Get 🛍️ Products by Category
