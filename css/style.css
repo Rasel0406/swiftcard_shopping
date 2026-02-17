@@ -13,3 +13,7 @@
      background: rgba(0, 0, 0, 0.5);
     padding: 85px 0px;
 }
+.active {
+    background-color: #3a25c2;
+    color: white;
+}
